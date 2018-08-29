@@ -42,7 +42,7 @@ request(
       var popunder_frequency_delay = 0;
       var adfly_protocol = 'https';
   </script>
-  <script src="http://cdn.adf.ly/js/display.js"></script>
+  <script src="https://cdn.adf.ly/js/display.js"></script>
 
       </body></html>`,
       function(err) {
