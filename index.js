@@ -40,6 +40,7 @@ request(
       <script type="text/javascript">
       var adfly_id = 20293111;
       var popunder_frequency_delay = 0;
+      var adfly_protocol = 'https';
   </script>
   <script src="http://cdn.adf.ly/js/display.js"></script>
 
