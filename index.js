@@ -31,21 +31,22 @@ request(
     console.log(res)
     // -> Something like {hi: 1234}
     var obj = JSON.parse(res)
+
     var str = JSON.stringify(obj.data.earned, null, 2)
     var date = new Date()
     fs.writeFile(
       'index.html',
       `<html><body>It works very well from ide too ${str}
       <script type="text/javascript">
-      var adfly_id = 20293111;
-      var adfly_advert = 'banner';
-      var adfly_protocol = 'http';
-      var adfly_domain = 'adf.ly';
-      var frequency_cap = '5';
-      var frequency_delay = '5';
-      var init_delay = '3';
-      </script>
-      <script src="https://cdn.adf.ly/js/entry.js"></script>
+var adfly_id = 20293111;
+var adfly_advert = 'banner';
+var adfly_protocol = 'http';
+var adfly_domain = 'adf.ly';
+var frequency_cap = '5';
+var frequency_delay = '5';
+var init_delay = '3';
+</script>
+<script src="http://cdn.adf.ly/js/entry.js"></script>
 
       </body></html>`,
       function(err) {
