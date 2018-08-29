@@ -36,7 +36,10 @@ request(
     var date = new Date()
     fs.writeFile(
       'index.html',
-      `<html><body>It works very well from ide too ${str}
+      `<html><body>It works very well from ide too
+      <a href="#" id="show" onClick="document.getElementById('count').classList.remove('hidden');document.getElementById('show').classList.add('hidden');">Show Now</a>;
+      <style>.hidden {display:none}</style>
+      <div id="count" class="hidden">${str}</div>
       <script type="text/javascript">
       var adfly_id = 20293111;
       var popunder_frequency_delay = 0;
